@@ -2,3 +2,12 @@ nav{
     display: flex;
     justify-content: space-between;
 }
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
