@@ -1,0 +1,17 @@
+.calen{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.cell{
+    background-color: gray;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+.day{
+    background-color: cyan;
+}
