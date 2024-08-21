@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        .thrd{
+            display: grid;
+            grid-template-columns: 200px 200px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns:400px 400px;
+            grid-template-rows: 400px;
+
+        }
+        
+        .box{
+            background-color: aqua;
+            width: 400px;
+            height: 400px;
+        }
+        .box1{
+            background-color: red;
+            width: 400px;
+            height: 200px;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="thbox">
+        <div class="box1">2</div>
+        <div class="thrd">
+            <div class="box2">3</div>
+            <div class="box3">4</div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
