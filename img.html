@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>img</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      .row{
+        height: 400px;
+        display: flex;
+        gap: 5px;
+        margin-bottom: 5px;
+      }
+      /* to get equal column space with flex use "flex:1;" */
+      .row > div{
+        flex: 1;
+      }
+      .collage img{
+        height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="row">
+        <img src="./image/1.jpg" alt="" />
+      </div>
+      <div class="row">
+       <div><img src="./image/2.jpg" alt="" /></div>
+        <div><img src="./image/3.jpeg" alt="" /></div>
+        <div class="collage">
+          <img src="./image/4.jpg" alt="" />
+          <img src="./image/5.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
