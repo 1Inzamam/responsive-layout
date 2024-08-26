@@ -34,18 +34,6 @@
     gap: 20px;
 }
 
-@media screen and (max-width: 576px){
-    .con{
-        grid-template-areas: 
-        "header"
-        "nav"
-        "main"
-        "aside"
-        "second-aside"
-        "footer"
-        ;
-    }
-}
 @media screen and (max-width: 1000px)
 {
     .con{
@@ -56,6 +44,19 @@
         "aside main main"
         "second-aside footer footer"
         
+        ;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .con{
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "second-aside"
+        "footer"
         ;
     }
 }
