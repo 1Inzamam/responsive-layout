@@ -1,0 +1,61 @@
+.header, .nav, .main, .aside, .second-aside, .footer{
+    background-color: cyan;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+.main{
+    grid-area: main;
+}
+.aside{
+    grid-area: aside;
+}
+.second-aside{
+    grid-area: second-aside;
+}
+.footer{
+    grid-area: footer;
+}
+
+.con{
+    display: grid;
+    grid-template-areas:
+    "header     header  header  header"
+    "nav        main    main    aside"
+    "nav        main    main    second-aside"
+    "footer     footer  footer  footer"
+    ;
+    gap: 20px;
+}
+
+@media screen and (max-width: 576px){
+    .con{
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "second-aside"
+        "footer"
+        ;
+    }
+}
+@media screen and (max-width: 1000px)
+{
+    .con{
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "aside main main"
+        "aside main main"
+        "second-aside footer footer"
+        
+        ;
+    }
+}
